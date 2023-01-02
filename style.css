@@ -62,6 +62,9 @@ header .icon
     line-height: 32px;
     height: 32px;
 }
+header .icon a{
+    color: #FFFFFF;
+}
 
 header .icon iconify-icon:hover
 {
@@ -151,6 +154,10 @@ header .icon iconify-icon:hover
     font-size: 20px;
     line-height: 32px;
     height: 32px;
+}
+.footer .icon a
+{
+    color: #FFFFFF;
 }
 
 
