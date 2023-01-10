@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	font-family: sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+/* nav bar */
+.nav{
+	width: 100%;
+	height: 50px;
+	background-color: #FFFFFF;
+	padding: 0;
+}
+.nav ul{
+	float: left;
+	padding-left: 50px;
+}
+.nav ul li{
+	display: inline-block;
+	margin: 0 10px;
+	line-height: 50px;
+}
+.nav ul li a{
+	text-transform: capitalize;
+	font-family: 'Inria Serif';
+	color: #be9885;
+	padding: 15px 10px;
+}
+.nav ul li a:hover{
+	opacity: 0.7;
+	border-bottom: 2px solid #be9885;
+}
+
+
+
+/* nav icon */
+.nav  .icon{
+	float: right;
+	padding-right: 50px;
+	line-height: 50px;
+	padding-top: 6px;
+}
+.nav .icon li{
+	display: inline-block;
+	margin: 0 10px;
+	line-height: 50px;
+	margin: 0 -3px;
+}
+.nav .icon li a{
+	line-height: 50px;
+
+}
+.nav .icon li a:hover{
+	opacity: 0.7;
+}
+
+
+@media (max-width:768px){
+	.nav ul{
+		position: fixed;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		/* background-color: antiquewhite; */
+		background-color: #F7F1EB;
+		text-align: center;
+		padding: 0;
+		top: 50px;
+		left: -100%;
+		transition: 1s;
+	}
+	.nav ul li{
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+	.nav ul li:hover{
+		background-color: #FFFFFF;
+	}
+
+	.nav ul li a:hover{
+		opacity: 0.7;
+		border-bottom: 2px solid #be9885;
+	}
+	.nav ul.slide{
+		left: 0;
+		transition: 1s;
+	}
+	.hamburger{
+		float:left;
+		padding-left: 20px;
+		padding-top: 12px;
+	}
+	.hamburger .line{
+		width: 30px;
+		height: 5px;
+		background-color: #be9885;
+		margin-bottom: 5px;
+		display: block;
+	}
+}
+
+/* Landing Page */
+
+ .home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.home .name{
+    width: 100%;
+    height: 290px;
+    background: #F7F1EB;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home .name h3{
+    background: #F7F1EB;
+    font-family: 'Oldenburg';
+    font-size: 30px;
+    color: #A6726D;
+
+}
+.home .name p{
+    background: #F7F1EB;
+    font-family: 'Oldenburg';
+    font-size:15px;
+    color: #A6726D;
+
+}
+
+.about {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 80%;
+    margin: 0rem auto 0 auto;
+}
+
+.about .image{
+    flex: 30 1 1rem;
+    margin-right: 45px;
+    
+}
+
+.about .image img{
+    height: 28rem;
+    width: 24rem;
+    float: left;
+    border-radius: 10px;
+}
+
+.about h3 {
+    font-family: oldenberg;
+    margin: 0;
+    font-size: 22px;
+    color: #A6726D;
+}
+.about p {
+    font-family: oldenberg;
+    justify-content: space-between;
+    margin-right: 15px;
+    font-size: 15px;
+    color: #BE9885;
+    text-align: justify;
+}
+
+
+@media (max-width:768px){
+	html{
+		/* font-size: 55%; */
+	}
+	.home .name{
+		width: 100%;
+		
+	}
+	/* .about  h3{
+		font-size: 15px;
+	}
+	.about  p{
+		font-size: 7px;
+	} */
+	.about {
+		/* font-size: 55%; */
+		display: block;
+		justify-content: space-between;
+	}
+	.about .image img{
+		height: 27rem;
+		width: 23rem;
+		border-radius: 10px;
+		margin-right: 10px;
+	}
+	.about .content{
+		display: block;
+	}
+	.about .content h3{
+		/* margin-top: 10px; */
+	}
+}
+
+@media (max-width:500px){
+	.home .name{
+		font-size: ;
+		width: 100%;
+		height: 200px;
+	}
+	.home .name h3{
+		font-size: 20px;
+	}
+	.home .name p{
+		font-size: 7px;
+	}
+}
+
+/* footer */
+.footer {
+    background-color: #FFFFFF;
+    margin-top: auto;
+
+}
+
+.footer .icon{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #A6726D;
+    font-size: 20px;
+    line-height: 32px;
+    height: 32px;
+}
+.footer .icon a
+{
+    color: #FFFFFF;
+}
+
+
+.footer .icon iconify-icon:hover
+{
+    opacity: 0.75;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 10px;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: #BE9885;
+    text-decoration: none;
+    opacity: 0.15px;
+    font-family: 'Inria Serif';
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    opacity: 0.6;
+}
+
+.footer .copyright {
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #BE9885;
+}
